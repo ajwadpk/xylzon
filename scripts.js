@@ -1,6 +1,4 @@
-const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
-const navLinks = document.querySelector('nav .nav-links');
-
-mobileMenuIcon.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('open');
+}
