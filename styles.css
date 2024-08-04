@@ -23,6 +23,9 @@ header {
     z-index: 1000;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     transition: background 0.3s;
 }
 
@@ -42,7 +45,6 @@ header.sticky {
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -76,6 +78,7 @@ nav .cta {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
+    margin-left: 20px;
 }
 
 nav .cta:hover {
@@ -190,7 +193,7 @@ nav .cta:hover {
 }
 
 .contact-form input, 
-.contact-form textarea {
+contact-form textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -240,10 +243,29 @@ nav .cta:hover {
 
 /* Footer */
 footer {
-    padding: 20px;
+    padding: 40px 20px;
     background: #121212;
-    text-align: center;
     color: #ccc;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: #00c6ff;
 }
 
 footer p {
@@ -259,12 +281,13 @@ footer p {
         position: absolute;
         top: 60px;
         right: 0;
-        width: 200px;
+        width: 100%;
         border-radius: 0 0 5px 5px;
     }
 
     nav .nav-links li {
         margin: 10px 0;
+        text-align: center;
     }
 
     nav .cta {
